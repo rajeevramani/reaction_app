@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid's Reaction Testing App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Sid's Reaction App</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <label for="maxNumber" class="form-label">Max Number:</label>
+                <input type="number" id="maxNumber" class="form-control" min="1" step="1" required>
+            </div>
+            <div class="col-md-4">
+                <label for="interval" class="form-label">Interval (s):</label>
+                <input type="number" id="interval" class="form-control" min="1" step="1" value="1" required>
+            </div>
+            <div class="col-md-4">
+                <label for="repeat" class="form-label">Repeat:</label>
+                <input type="number" id="repeat" class="form-control" min="1" step="1" required>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <button onclick="generateRandomNumbers()" class="btn btn-primary">Start</button>
+                <button onclick="stopGenerating()" class="btn btn-danger">Stop</button>
+                <button onclick="resetFields()" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
